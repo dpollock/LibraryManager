@@ -1,5 +1,6 @@
 namespace LibraryManager.API.Models
 {
+    using Migrations;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -15,6 +16,7 @@ namespace LibraryManager.API.Models
         public LibraryDBContext()
             : base("name=LibraryDBContext")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<LibraryDBContext, Configuration>());
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
