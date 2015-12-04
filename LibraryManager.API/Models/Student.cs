@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -19,7 +20,10 @@ namespace LibraryManager.API.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
+
+        [Index(IsUnique = true)]
         public string ISBN { get; set; }
+        public int Year { get; set; }
 
         public ICollection<CheckOut> CheckOuts { get; set; }
 

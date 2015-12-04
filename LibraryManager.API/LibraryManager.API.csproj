@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201512041747389_InitialCreate.Designer.cs">
       <DependentUpon>201512041747389_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512042359311_AddedBookYearISBNUnique.cs" />
+    <Compile Include="Migrations\201512042359311_AddedBookYearISBNUnique.Designer.cs">
+      <DependentUpon>201512042359311_AddedBookYearISBNUnique.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LibraryDBContext.cs" />
     <Compile Include="Models\Student.cs" />
@@ -251,6 +255,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512041747389_InitialCreate.resx">
       <DependentUpon>201512041747389_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512042359311_AddedBookYearISBNUnique.resx">
+      <DependentUpon>201512042359311_AddedBookYearISBNUnique.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
