@@ -13,7 +13,7 @@ namespace LibraryManager.API.Models
         // If you wish to target a different database and/or database provider, modify the 'LibraryDBContext' 
         // connection string in the application configuration file.
         public LibraryDBContext()
-            : base("name=LibraryDBContext")
+            : base("name=SQLSERVER_CONNECTION_STRING")
         {
         }
 
